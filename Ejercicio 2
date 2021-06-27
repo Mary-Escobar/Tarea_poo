@@ -1,0 +1,13 @@
+class comision:
+	def __init__(self):
+		self.sueldobase=float(input("Ingrese el valor de su sueldo:  "))
+		self.venta1=float(input("Ingrese el valor de su primera venta: "))
+		self.venta2=float(input("Ingrese el valor de su segunda venta: "))
+		self.venta3=float(input("Ingrese el valor de su tercera venta: "))
+	def calco(self):
+		pc=(self.venta1+self.venta2+self.venta3)*0.1
+		print("Su sueldo final es de:{} $".
+		format(self.sueldobase+pc))
+	
+ob=comision()
+ob.calco()
