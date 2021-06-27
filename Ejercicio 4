@@ -1,0 +1,12 @@
+class exa2:
+	def __init__(self):
+		pass
+	def aprorepro(self):
+		nex=float(input("Ingrese su calificacion: "))
+		if nex>=7 :
+			print(" APROBADO " )
+		else:
+			 print("REPROBADO")
+ 
+ob=exa2()
+ob.aprorepro()
