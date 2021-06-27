@@ -1,0 +1,18 @@
+class hpagar:
+	def __init__(self):
+		pass
+	def calsuel(self):
+		vh=float(input("Ingrese el precio por hora:"))
+		ht=int(input("Ingrese las horas trabajadas:"))
+		if ht>40 and ht<49:
+			he=((ht-40)*vh)*2 
+			print("Su ganancias por las horas extras es:{}, su sueldo a pagar es:{}".format(he,(he+(40*vh))))
+		elif ht>48:
+			hex=((ht-48)*vh)*3+((8*vh)*2)
+			sn=40*vh
+			print("Su ganancia por las horas extras es:{}, su sueldo a pagar es:{} ".format(hex,(hex+sn)))
+		else:
+			print("Su sueldo es:{} $".format(ht*vh))
+
+ob=hpagar()
+ob.calsuel()
