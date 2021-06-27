@@ -1,0 +1,18 @@
+class funcion:
+	def __init__(self):
+		self.opc=int(input("ingrese un numero entre 1 y 3:"))
+		self.num=int(input("ingrese un nunmero:"))
+		
+	def op(self):
+		if self.opc== 1:
+			m=100*self.num
+			print("El resultado es:",m)
+		elif self.opc== 2:
+			p=100**self.num
+			print("El resultado es:",p)
+		elif self.opc== 3:
+			d=100/self.num
+			print("El resultado es:",d)
+
+obj=funcion()
+obj.op()
