@@ -1,0 +1,18 @@
+class ne:
+	def __init__(self):
+		pass
+		
+	def nen(self):
+		n="si"
+		sum=0
+		pro=1
+		while n!="no":
+			num=int(input("ingrese un numero: "))
+			sum+=num
+			pro=pro*num
+			n=input("desea continuar si/no: ")
+			n=n.lower()
+		print("La suma es:{} y el producto es:{}".format(sum,pro))
+
+ob=ne()
+ob.nen()
