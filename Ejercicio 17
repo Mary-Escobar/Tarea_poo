@@ -1,0 +1,36 @@
+no=[]
+lis=[]
+f=30
+c=6
+promgen=[]
+
+for i in range (1,3):
+	nalm=input("Ingrese el nombre del alumno: ")
+	lis.append(nalm)
+	for cal in range(1,7):
+		cex=round(float(input("Ingrese la nota:")),2)
+		if cal ==1:
+			no.append([cex])
+		else:
+			no[i-1].append(cex)
+#1
+numex=1						
+for nex in range(6):
+	suma=0
+	for cal in no:
+		suma+=cal[nex]
+		prome=round((suma/f),2)
+	promgen.append(prome)
+	print("El promedio general del  examen {} es:{}".format(numex,prome))
+	numex+=1
+print(promgen)
+#2	
+for num, i in enumerate(lis):
+	suma=sum(no[num])
+	prom=round((suma/c),2)
+	print("El promedio del lumno {} es:{}".format(i,prom))
+
+#3	
+mayor=promgen.index(max(promgen))
+promay=max(promgen)
+print("El examen {}  tiene el primedio mas alto {} ".format(mayor+1,promay))
