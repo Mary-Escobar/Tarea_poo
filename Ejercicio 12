@@ -1,0 +1,13 @@
+class sumpro:
+	def __init__(self):
+		print("El bucle termina cuando se ingresa el numero 0")
+		self.n=int(input("ingrese un numero:"))
+		s=0
+		p=1
+		while self.n != 0:
+			s+=self.n
+			p*=self.n
+			self.n=int(input("ingrese un numero:"))
+		print("La suma es:{} y el producto es:{}".format(s,p))
+		
+obj12=sumpro()
