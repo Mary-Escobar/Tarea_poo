@@ -1,0 +1,18 @@
+class mayor:
+	def __init__(self):
+		pass
+	
+	def nmayor(self):
+		n1=int(input("Ingrede un numero:"))
+		n2=int(input("Ingrede un numero:"))
+		n3=int(input("Ingrede un numero:"))
+		if n1>n2 or n1>n3:
+			print("El mayor es:",n1)
+		elif n2>n1 or n2>n3:
+			print("El mayor es:",n2)
+		elif n3>n2 or n3>n1:
+			print("El mayor es:",n3)
+		else:
+			print("Los nuneros son iguales")
+ob=mayor()
+ob.nmayor()
