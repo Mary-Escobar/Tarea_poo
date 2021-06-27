@@ -1,0 +1,19 @@
+class primo:
+	def __init__(self):
+		pass
+	def prim(self):
+		primo= True
+		divisor=2
+		num= int(input("Ingrese un número: "))
+		while divisor<num and primo==True:
+		          res= num%divisor
+		          if res==0:
+		          	primo= False
+		          divisor+=1
+		if primo== True:
+			print("El número {} es primo".format(num))
+		else:
+			print("El número {} no es primo" .format(num))
+
+ob=primo()
+ob.prim()
