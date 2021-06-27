@@ -1,0 +1,9 @@
+class descuento:
+	def __init__(self):
+		self.vc=float(input("Ingrese el valor de su compra: "))
+	def des(self):
+		por=self.vc*0.15
+		print("El valor a pagar por su compra es:{} $".format(self.vc-por))
+
+ob=descuento()
+ob.des()
