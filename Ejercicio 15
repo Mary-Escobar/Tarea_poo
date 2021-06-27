@@ -1,0 +1,17 @@
+class factorial:
+	def __init__(self):
+		self.nu=int(input("Ingrese la cantidad de numeros a evaluar:"))
+		
+	def fac(self):
+		for i in range(self.nu):
+			f=1
+			c=1
+			num=int(input("Ingrese el numero:"))
+			for j in range(num):
+				f*=c
+				c+=1
+			print("El factorial de {} es:{}".format(num,f))
+
+obj=factorial()
+obj.fac()
+		
