@@ -1,0 +1,21 @@
+class serie:
+	def __init__(self):
+		pass
+		
+	def rse(self):
+		s=0
+		i=1
+		b=True 
+		n=int(input("ingrese n:"))
+		while  n>=i:
+			if b==True:
+				s=s+(1/i)
+				b=False 
+			else:
+				s=s-(1/i)
+				b=True
+			i+=1	
+		print("El resultado de la serie es:",s)
+
+ob=serie()
+ob.rse()
