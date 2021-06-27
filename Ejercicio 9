@@ -1,0 +1,11 @@
+class sc:
+	def __init__(self):
+		pass 
+	def sum(self):
+		suma=0
+		for i in range(0,100,1):
+			suma+= i**2
+		print("La sumaes:",suma)
+
+ob=sc()
+ob.sum()
