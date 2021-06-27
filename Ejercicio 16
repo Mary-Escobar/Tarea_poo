@@ -1,0 +1,18 @@
+class vector:
+	def __init__(self):
+		pass
+
+	def vec(self):
+		j=[]
+		k=[]
+		for i in range(20):
+			num=int(input("Ingrese un numero:"))
+			if num>=0:
+				j.append(num)
+			else:
+				k.append(num)
+		print("Los numeros positivos son: ",j)
+		print("Los numeros negativos son: ",k)
+
+ob=vector()
+ob.vec()
